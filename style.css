@@ -1,0 +1,81 @@
+/* Reset + smooth scroll */
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+body { background: #f9f9f9; color: #333; line-height: 1.6; font-family: Arial, sans-serif; }
+.container { width: 80%; margin: 20px auto; }
+
+/* Nav */
+nav { background: #222; color: #fff; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; width: 80%; margin: auto; }
+.logo { color: #fff; font-size: 1.5rem; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: #fff; text-decoration: none; font-weight: bold; transition: color .3s; }
+.nav-links a:hover { color: #36a2eb; }
+
+/* Header */
+header { background: #333; color: #fff; padding: 60px 0; text-align: center; }
+.profile-img {
+  width: 180px; height: 180px; object-fit: cover;
+  border-radius: 50%; border: 4px solid #fff; margin-bottom: 15px;
+}
+header h1 { font-size: 2rem; }
+header p { font-size: 1.1rem; color: #ccc; }
+
+/* Sections */
+section { margin: 40px 0; }
+h2 { margin-bottom: 20px; font-size: 1.8rem; border-bottom: 2px solid #222; display: inline-block; }
+
+/* Bio */
+#bio { margin: 40px 0; text-align: left; }
+#bio h2 { text-align: left; }
+#bio p { max-width: 800px; margin: 15px 0; font-size: 1.1rem; line-height: 1.7; color: #444; }
+#bio strong { color: #222; }
+#bio em { color: #d32f2f; font-style: normal; font-weight: bold; }
+
+/* Cards */
+.card { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
+.card h3 { margin-bottom: 10px; color: #222; }
+.card ul { margin: 10px 0 0 20px; }
+
+/* Skills */
+.skills-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.skills-list li {
+  background: #222; color: #fff; padding: 8px 12px;
+  border-radius: 20px; font-size: .9rem;
+}
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  background: #d32f2f;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.resume-btn:hover { background: #a82424; }
+.resume-btn i { margin-right: 8px; }
+
+/* Contact */
+#contact p { margin: 10px 0; font-size: 1rem; }
+#contact a { color: #222; text-decoration: none; }
+#contact a:hover { color: #0366d6; }
+#contact i { margin-right: 8px; }
+
+/* Footer */
+footer { text-align: center; background: #222; color: #fff; padding: 20px; margin-top: 40px; }
+.github-btn {
+  display: inline-block; background: #24292e; color: #fff; text-decoration: none;
+  font-weight: bold; padding: 12px 24px; border-radius: 6px; margin: 5px;
+  transition: background .3s ease;
+}
+.github-btn:hover { background: #444c56; }
+.github-btn i { margin-right: 8px; }
+
+/* Small screens */
+@media (max-width: 768px) {
+  .container, .nav-container { width: 92%; }
+  .nav-links { gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
+  .profile-img { width: 140px; height: 140px; }
+}

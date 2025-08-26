@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photos - Ryan Subhan</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    /* Photo gallery styling */
+    .gallery-container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .intro-text {
+      max-width: 850px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      text-align: center;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <h2 class="logo">Ryan Subhan</h2>
+      <ul class="nav-links">
+        <li><a href="index.html#bio">About</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#certificates">Certificates</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
+        <li><a href="photos.html" class="active">Photos</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Photo Gallery</h1>
+    <p>A collection of my projects, events, and creative work.</p>
+  </header>
+
+  <!-- Intro Paragraph -->
+  <div class="intro-text">
+    <p>
+      Here are some of my works during my time as <strong>Creative Director</strong> for the 
+      <strong>American Marketing Association (AMA)</strong> at Baruch College, where I led design 
+      initiatives, developed social media campaigns, and created engaging content for events and 
+      promotions.
+      <br><br>
+      You’ll also find a glimpse into my experiences in <strong>Panama</strong>, where I worked 
+      on a <strong>business consulting project</strong> with a local entrepreneur, helping her 
+      improve her marketing strategy, develop a logo, and expand her craft business.
+    </p>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="image (7).png" alt="Baruch Event Flyer"/>
+    </div>
+    <div class="gallery-item">
+      <img src="image (6).png" alt="Squid Game Event Flyer"/>
+    </div>
+    <div class="gallery-item">
+      <img src="image (5).png" alt="AMA Raffle Prize"/>
+    </div>
+    <div class="gallery-item">
+      <img src="image (4).png" alt="Women's History Wednesdays Story"/>
+    </div>
+    <div class="gallery-item">
+      <img src="image (1).png" alt="Instagram Reel Covers"/>
+    </div>
+    <div class="gallery-item">
+      <img src="image.png" alt="Business Consulting in Panama"/>
+    </div>
+    <div class="gallery-item">
+      <img src="image (8).png" alt="Avid Yearbook Post"/>
+    </div>
+    <div class="gallery-item">
+      <img src="image (3).png" alt="Chinese New Year Story Post"/>
+    </div>
+    <div class="gallery-item">
+      <img src="image (2).png" alt="Jesse AMA E-Board"/>
+    </div>
+    <div class="gallery-item">
+      <img src="image 9.png" alt="AMA E-Board Profiles"/>
+    </div>
+    <div class="gallery-item">
+      <img src="image 10.png" alt="AMA Instagram Spring Feed"/>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Ryan Subhan</p>
+  </footer>
+
+</body>
+</html>
